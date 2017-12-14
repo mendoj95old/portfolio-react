@@ -1,0 +1,89 @@
+.layout {
+  padding: 60px 0px 0px;
+}
+
+.sub-layout {
+  margin: 10px 0;
+  background-color: #dadada;
+  box-shadow: 5px 5px 20px;
+}
+
+.home-content {
+  text-align: center;
+  position: relative;
+}
+
+.home-profile-pic {
+  width: 270px;
+  height: 235px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 100%;
+  background-color: #c0b575;
+}
+
+.home-profile-pic img {
+  margin: -15px 0 0 31px;
+}
+
+.home-logo {
+  font-family: "Oswald", sans-serif;
+  font-size: 4em;
+  margin: 0 -15px 20px;
+  background-color: black;
+  color: #8e8e8e;
+  padding: 15px;
+}
+
+.home-motto {
+  font-family: "Lora", serif;
+  font-size: 25px;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+
+.home-links {
+  float: none;
+  margin: 0 auto;
+}
+
+.home-tech-list {
+  padding: 0px;
+  list-style: none;
+}
+
+.about-layout {
+  padding-top: 50px;
+  height: 855px;
+}
+
+.about-image {
+  width: 300px;
+}
+
+.portfolio-layout {
+  padding-top: 50px;
+  /*height: 855px;*/
+}
+
+.portfolio-img {
+  width: 300px;
+  height: 280px;
+  box-shadow: 3px 3px 6px #888888;
+}
+
+.contact-layout {
+  padding-top: 50px;
+  height: 500px;
+}
+
+footer {
+  padding-top: 10px;
+  background-color: #85adad;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
