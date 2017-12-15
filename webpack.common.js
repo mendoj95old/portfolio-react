@@ -36,7 +36,7 @@ module.exports = {
 	},
 	output: {
 		path: DIST_DIR,
-		filename: 'js/bundle.js',
+		filename: 'bundle.js',
 		publicPath: '/'
 	}
 };
