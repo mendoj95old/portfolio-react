@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import resumeData from './Resume.data_sample';
 
-class ResumePage extends Component {
+class ResumeExperienceList extends Component {
 
 	constructor(props) {
 		super(props);
 		this.state = {
-			resume: resumeData.sample
+			experienceList: this.props.experienceList
 		};
 	}
 
@@ -23,7 +22,7 @@ class ResumePage extends Component {
 					</ul>
 				);
 			}
-			
+   
 		});
 
 		const experience = this.state.resume.map(obj => {
@@ -32,10 +31,10 @@ class ResumePage extends Component {
 					<div className="row">
 						<div className="col-md-6">
 							<h4>{ obj.department }, { obj.title }</h4>
-							<h5>{ obj.company }, { obj.location}</h5>
+							<h4>{ obj.company }, { obj.location}</h4>
 						</div>
 						<div className="col-md-6">
-							<h5 className="text-right">{ obj.dates }</h5>
+							<h4 className="text-right">{ obj.dates }</h4>
 						</div>
 					</div>
 
@@ -51,15 +50,10 @@ class ResumePage extends Component {
 
 		return (
 			<div>
-				<h2 className="page-title"><i className="fa fa-file-text-o"></i> Resume</h2>
-				<div className="container-fluid">
-
-					{ experience }
-
-				</div>
+				{ experience }
 			</div>
 		);
 	}
 }
 
-export default ResumePage;
+export default ResumeExperienceList;

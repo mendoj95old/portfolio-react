@@ -1,4 +1,4 @@
-# Portfolio
+# Justin Mendoza's Portfolio
 
 This application is code for my portfolio that will contain a little bit about me, links to my professional social media pages, projects, and my resume. I created it using ReactJS and NodeJS. The project is packaged using webpack.
 

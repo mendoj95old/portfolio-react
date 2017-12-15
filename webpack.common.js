@@ -1,6 +1,6 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const DIST_DIR = path.resolve(__dirname, 'dist');
 const SRC_DIR = path.resolve(__dirname, 'src');
@@ -9,12 +9,13 @@ module.exports = {
 	entry: [
 		SRC_DIR + '/app/index.jsx'
 	],
-	output: {
-		path: DIST_DIR,
-		filename: 'js/bundle.js',
-		publicPath: '/'
-	},
-	devtool: 'inline-source-map',
+	plugins: [
+		new CleanWebpackPlugin(['dist']),
+		new HtmlWebpackPlugin({
+			title: 'Justin Mendoza Portfolio',
+			template: './src/index.template.html' 
+		})
+	],
 	module: {
 		rules: [
 			{ 
@@ -33,11 +34,9 @@ module.exports = {
 			{ test: /\.(png|jpg|gif)$/, use: ['file-loader'] }
 		]
 	},
-	plugins: [
-		new CleanWebpackPlugin(['dist']),
-		new HtmlWebpackPlugin({ 
-			title: 'Justin Mendoza Portfolio',
-			template: './src/index.template.html' 
-		})
-	]
+	output: {
+		path: DIST_DIR,
+		filename: 'js/bundle.js',
+		publicPath: '/'
+	}
 };

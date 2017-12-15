@@ -20,11 +20,7 @@ class HomeTechSection extends Component {
 
 		const technology = this.state.technology;
 
-		const techHeaders = Object.keys(technology).map(colName => { 
-            
-			return <th>{ colName }</th>; 
-
-		});
+		const techHeaders = Object.keys(technology).map(colName =>  <th>{ colName }</th> );
   
 		const techCol = Object.keys(technology).map((key) => {
 
