@@ -13,7 +13,6 @@ module.exports = (app) => {
 	app.use(cookieParser());
 	
 	app.use('/', express.static(path.join(rootPath + '/dist')));
-	app.use('/js', express.static(path.join(rootPath + '/dist/js')));
 
 	app.set('json spaces', 2);
 	app.set('trust proxy', true);
